@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = ['0981345904', '0324569054', '0812312419', '0326277941', '0865137402', '0377190261', '0896683372', '0931815395', '0945385599'];
+    let array = [];
+
+    function findVina(arr) {
+        let regexp = /0([39][2-9])(\d{7})/gm;
+        for (let i = 0; i < arr.length; i++) {
+            if (regexp.test(arr[i])) {
+                array.push(arr[i]);
+            }
+        }
+            alert(array );
+    }
+
+    findVina(number);
+</script>
+
+
+</body>
+</html>
